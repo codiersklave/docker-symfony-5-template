@@ -1,25 +1,25 @@
 version: "3"
 services:
-    glenmorangie_app:
-        container_name: glenmorangie_app
+    glenfiddich_app:
+        container_name: glenfiddich_app
         build:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - .:/var/www/html:cached
+            - ./app:/var/www/html:cached
         ports:
             - "80:80"
         depends_on:
-            - glenmorangie_db
+            - glenfiddich_db
     glenmorangie_db:
-        container_name: glenmorangie_db
+        container_name: glenfiddich_db
         image: mysql:8.0
         ports:
             - "3306:3306"
         environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: glenmorangie_db
-            MYSQL_USER: glenmorangie
-            MYSQL_PASSWORD: glenmorangie
+            MYSQL_DATABASE: glenfiddich_db
+            MYSQL_USER: glenfiddich
+            MYSQL_PASSWORD: glenfiddich
         volumes:
             - ./data/:/var/lib/mysql
