@@ -11,7 +11,7 @@ services:
             - "80:80"
         depends_on:
             - glenfiddich_db
-    glenmorangie_db:
+    glenfiddich_db:
         container_name: glenfiddich_db
         image: mysql:8.0
         ports:
