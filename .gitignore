@@ -2,3 +2,4 @@
 /data/
 docker-compose.yml
 .env
+/app/tmp/*.log
