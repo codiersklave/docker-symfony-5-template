@@ -1,15 +1,6 @@
-# Glenfiddich
+# Symfony 5 Template
 
-_**Symfony 5 Template** - Docker, Apache 2, PHP 8, MySQL 8, Symfony 5._
-
----
-
-**Glenfiddich is a Speyside single malt Scotch whisky produced by William Grant & Sons in the Scottish burgh of 
-Dufftown in Moray. Glenfiddich means "valley of the deer" in Scottish Gaelic, which is why the Glenfiddich logo is a 
-stag.**
-
-**Glenfiddich is the world's best-selling single-malt whisky and also the most awarded at the International Spirits 
-Challenge.**
+_Docker, Apache 2, PHP 8, MySQL 8, Symfony 5._
 
 ## Description
 
