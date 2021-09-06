@@ -1,7 +1,7 @@
 version: "3"
 services:
-    glenfiddich_app:
-        container_name: glenfiddich_app
+    app:
+        container_name: app
         build:
             context: .
             dockerfile: Dockerfile
@@ -10,16 +10,16 @@ services:
         ports:
             - "80:80"
         depends_on:
-            - glenfiddich_db
-    glenfiddich_db:
-        container_name: glenfiddich_db
+            - db
+    db:
+        container_name: db
         image: mysql:8.0
         ports:
             - "3306:3306"
         environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: glenfiddich_db
-            MYSQL_USER: glenfiddich
-            MYSQL_PASSWORD: glenfiddich
+            MYSQL_DATABASE: project_db
+            MYSQL_USER: project_db
+            MYSQL_PASSWORD: project_db
         volumes:
             - ./data/:/var/lib/mysql
